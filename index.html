@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0b0b0e">
+<title>PAPAYA RUSH</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="hud" class="hidden">
+  <div><small>SCORE</small><b id="score">0</b></div>
+  <div><small>SPEED</small><b id="speed">0</b> <small>km/h</small></div>
+</div>
+
+<div id="controls" class="hidden">
+  <button id="btnL" class="ctl">&#9664; LEFT</button>
+  <button id="btnR" class="ctl">RIGHT &#9654;</button>
+</div>
+
+<div id="start" class="screen">
+  <h1>PAPAYA <span>RUSH</span></h1>
+  <canvas id="hero" width="360" height="200"></canvas>
+  <button id="play" class="big">PLAY</button>
+  <p>&#8592; &#8594; або утримуй кнопки LEFT / RIGHT</p>
+</div>
+
+<div id="over" class="screen hidden">
+  <h1>GAME <span>OVER</span></h1>
+  <p class="res">Результат: <b id="final">0</b></p>
+  <p class="res">Рекорд: <b id="best">0</b></p>
+  <button id="again" class="big">PLAY AGAIN</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
